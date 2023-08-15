@@ -1,0 +1,116 @@
+@import './variables.module.scss';
+
+.slider_desktop {
+    display: grid;
+    .sliderwrapper {
+        width: 80%;
+        margin: auto;
+        div {
+            text-align: center;
+            img {
+                width: 62vw;
+                height: 32vw;
+            }
+            
+        }
+        .buttonContainer {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            transform: translate(0%, -175%);
+            height: 50px;
+            width: 90%;
+            margin: auto;
+            .leftbutton {
+                background-image: url('../assets/images/arrow-left.png');
+                width: 2.5vw;
+                justify-self: start;
+                filter: invert(80%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+            
+            .rightbutton {
+                justify-self: end;
+                background-image: url('../assets/images/arrow-right.png');
+                width: 2.5vw;
+                filter: invert(80%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+        }
+    }
+    .textcontainer {
+        background-color: $color_main;
+        margin: 0 auto;
+        width: 80%;
+        p {
+            color: #fff;
+            padding: 1rem;
+            font-family: $font;
+            font-size: 1.2rem;
+        }
+    }
+}
+    
+
+.slider_mobile {
+    display: grid;
+    .sliderwrapper {
+        display: grid;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        div {
+            overflow: visible;
+        }
+        img {
+            width: 100%;
+            height: 50vw;
+        }
+        .buttonContainer {
+            justify-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            transform: translate(5%, -150%);
+            width: 90%;
+            .leftbutton {
+                margin-left: .6rem;
+                background-image: url('../assets/images/arrow-left.png');
+                width: 5vw;
+                justify-self: start;
+                height: 5vw;
+                filter: invert(80%);
+                border: none;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .rightbutton {
+                justify-self: end;
+                margin-right: .6rem;
+                background-image: url('../assets/images/arrow-right.png');
+                width: 5vw;
+                height: 5vw;
+                filter: invert(80%);
+                border: none;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+        }
+
+    }
+    .textcontainer {
+        background-color: $color_main;
+        margin: 0 auto;
+        padding: .5rem;
+        p {
+            color: white;
+            font-family: $font;
+            font-size: 1rem;
+        }
+    }
+
+}

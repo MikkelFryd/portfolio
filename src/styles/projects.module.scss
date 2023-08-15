@@ -1,0 +1,23 @@
+@import './variables.module.scss';
+
+.projects_desktop {
+    background-color: $color_main;
+    h2 {
+        color: #fff;
+        font-family: $font;
+        margin: 0;
+        padding: 0.4rem;
+        text-align: center;
+    }
+}
+
+.projects_mobile {
+    background-color: $color_main;
+    h2 {
+        color: #fff;
+        font-family: $font;
+        margin: 0;
+        padding: 0.4rem;
+        text-align: center;
+    }
+}
