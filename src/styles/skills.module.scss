@@ -1,0 +1,63 @@
+@import './variables.module.scss';
+
+.skills_desktop {
+    background-color: $color_main;
+    h2 {
+        color: #fff;
+        margin: 0;
+        padding: 0.4rem;
+        font-family: $font;
+        text-align: center;
+    }
+    .skillscontainer {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        padding: 1rem;
+        width: 90%;
+        text-align: center;
+        span {
+            img {
+                width: 3vw;
+                height: 3vw;
+            }
+            p {
+                margin: 0;
+                font-family: $font;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.skills_mobile {
+    background-color: $color_main;
+    h2 {
+        color: #fff;
+        margin: 0;
+        padding: 0.4rem;
+        font-family: $font;
+        text-align: center;
+    }
+    .skillscontainer {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 1rem;
+        text-align: center;
+        gap: .5rem;
+        span {
+            img {
+                width: 8vw;
+                height: 8vw;
+            }
+            p {
+                margin: 0;
+                font-family: $font;
+                color: #fff;
+            }
+        }
+    }
+}
